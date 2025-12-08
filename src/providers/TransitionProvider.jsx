@@ -1,5 +1,5 @@
 "use client";
 
-export default function TransitionProviders({}) {
+export default function TransitionProvider({}) {
   return <></>;
 }

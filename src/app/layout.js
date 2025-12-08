@@ -1,5 +1,6 @@
 import "./globals.css";
 import Nav from "@/components/nav";
+import TransitionProvider from "@/providers/TransitionProvider";
 
 export const metadata = {
   title: "Create Next App",
@@ -10,8 +11,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Nav />
-        {children}
+        <TransitionProvider>
+          <Nav />
+          {children}
+        </TransitionProvider>
       </body>
     </html>
   );
