@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useEffect } from "react";
-import { TransitionRouter } from "nex-transition-router";
+import { TransitionRouter } from "next-transition-router";
 import gasp from "gsap";
 
 const BLOCK_SIZE = 60;
