@@ -17,12 +17,12 @@ export default function TransitionProvider({ children }) {
     container.innerHTML = "";
     blocksRef.current = [];
 
-    const gridWidth = window.innerWidht;
+    const gridWidth = window.innerWidth;
     const gridHeight = window.innerHeight;
     const columns = Math.ceil(gridWidth / BLOCK_SIZE);
     const rows = Math.ceil(gridHeight / BLOCK_SIZE) + 1;
     const offsetX = (gridWidth - columns * BLOCK_SIZE) / 2;
-    const offsetY = (gridWidth - rows * BLOCK_SIZE) / 2;
+    const offsetY = (gridHeight - rows * BLOCK_SIZE) / 2;
   };
 
   return (
